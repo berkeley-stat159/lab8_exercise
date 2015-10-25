@@ -6,11 +6,17 @@
 ## Goal
 
 The goal of this breakout is to *exactly* replicate (minus differences due to 
-full-screen aspect ratios) the following image with `matplotlib`:
+screen aspect ratios) the following image with `matplotlib`:
 
 ![Replicate Me](stocks_and_temp.png)
 
-The data for the exercise are contained in the data folder. Note that the dates
+When the user zooms in the image, the date on the x-axis should get more 
+precise, like so:
+
+![zoomed](stocks_and_temp_zoomed.png)
+
+The data for the exercise are contained in the `data` folder. 
+Note that the dates
 for the data are all stored in Modified Julian Date (MJD) format. You will need
 to convert this to a numpy datetime object (**HINT**: you might want to search
 GitHub for projects that convert from MJD-to-date rather than implement the
